@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using WebApplication1.Models;
+using list_rest.Models;
 
-namespace WebApplication1.Controllers
+namespace list_rest.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -43,7 +43,6 @@ namespace WebApplication1.Controllers
         public void Delete(int id)
         {
             ValuesModel.GetModel().DeleteValue(id);
-
         }
     }
 }
